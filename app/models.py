@@ -17,9 +17,20 @@ class VerificationResponse(BaseModel):
 class MonitorRequest(BaseModel):
     scammer_wallet: str
 
+class TokenInfo(BaseModel):
+    mint: str
+    amount: float
+    decimals: int
+
+class AccountInfo(BaseModel):
+    sol_balance: float
+    tokens: List[TokenInfo]
+
 class ScammerStatus(BaseModel):
     address: str
-    balance: float
+    balance: float # Kept for backward compatibility, but should sync with account_info.sol_balance
     status: str
     risk_label: str
-    latest_activity: List[str]
+    latest_activity: List[str] # Signatures
+    recent_logs: List[str] = [] # Human readable alerts
+    account_info: Optional[AccountInfo] = None
