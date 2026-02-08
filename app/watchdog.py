@@ -12,24 +12,7 @@ from typing import Optional, List
 from .models import ScammerStatus, TokenInfo, AccountInfo
 from .state import scammer_db
 
-# Load Risk Database from JSON
-RISK_DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "risk_data.json")
-
-def load_risk_db():
-    try:
-        with open(RISK_DB_PATH, "r") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Warning: Could not load risk data: {e}")
-        return {}
-
-KNOWN_EXCHANGES = load_risk_db()
-
-def get_risk_label(address: str) -> str:
-    for name, addr in KNOWN_EXCHANGES.items():
-        if addr == address:
-            return f"High Risk: {name}"
-    return "Unknown"
+from .forensics import get_risk_label
 
 async def trigger_whatsapp_alert(message: str):
     print(f"[WhatsApp Alert]: {message}")
