@@ -40,13 +40,7 @@ def check_sol_transfer(meta, account_keys, sender: str, receiver: str) -> dict:
     return {"verified": False}
 
 def check_token_transfer(meta, sender: str, receiver: str) -> dict:
-    """
-    Checks for SPL Token transfers by analyzing pre/post token balances.
-    We look for a token account owned by 'receiver' that increased in balance,
-    and a token account owned by 'sender' that decreased (optional, sometimes mints happen).
-    """
-    # pre_token_balances is a list of objects with {accountIndex, mint, uiTokenAmount, owner}
-    # We care about the 'owner' field mostly.
+    
     
     pre_tokens = meta.pre_token_balances
     post_tokens = meta.post_token_balances
@@ -64,8 +58,7 @@ def check_token_transfer(meta, sender: str, receiver: str) -> dict:
     pre_map = map_balances(pre_tokens)
     post_map = map_balances(post_tokens)
     
-    # Check if Receiver gained any tokens
-    # We iterate through post_tokens to find accounts owned by receiver
+   
     for item in post_tokens:
         if item.owner == receiver:
             mint = item.mint
@@ -75,12 +68,11 @@ def check_token_transfer(meta, sender: str, receiver: str) -> dict:
             diff = new_bal - old_bal
             
             if diff > 0:
-                # Found a positive transfer to receiver!
-                # Ideally check if sender lost same token (omitted for loose verification)
+                
                 return {
                     "verified": True,
                     "amount": diff,
-                    "token": f"SPL Token ({mint[:4]}...)", # Shortened mint address
+                    "token": f"SPL Token ({mint[:4]}...)",
                     "mint": mint,
                     "message": f"Verified SPL Token transfer"
                 }
@@ -114,7 +106,7 @@ def verify_transaction(signature: str, sender: str, receiver: str) -> dict:
         # 2. Check SPL Token Transfer
         token_result = check_token_transfer(meta, sender, receiver)
         if token_result["verified"]:
-             token_result["timestamp"] = tx.value.block_time
+             token_result["timestamp"] = tx.value.block_t # Shortened mint addressime
              return token_result
 
         return {"verified": False, "message": "No significant SOL or Token movement found to the scammer address."}
