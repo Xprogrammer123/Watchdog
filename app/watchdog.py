@@ -20,20 +20,16 @@ def load_risk_db():
 KNOWN_EXCHANGES = load_risk_db()
 
 def get_risk_label(address: str) -> str:
-    # Reload every time for real-time updates? Or just once? 
-    # For now, let's keep it simple and use the global loaded one.
-    # To be more dynamic we could reload or cache with a TTL.
+   
     for name, addr in KNOWN_EXCHANGES.items():
         if addr == address:
             return f"High Risk: {name}"
     return "Unknown"
 
 async def trigger_whatsapp_alert(message: str):
-    # dynamic import to avoid circular dependency if any, or just keep it simple
+  
     print(f"[WhatsApp Alert]: {message}")
-    # In a real app, you would make a POST request to the WhatsApp API here
-    # import requests
-    # requests.post("WHATSAPP_API_URL", json={"message": message})
+   
 
 class Watchdog:
     def __init__(self):
@@ -49,7 +45,7 @@ class Watchdog:
         print(f"Started monitoring {address}")
         
         async with websockets.connect(self.ws_url) as websocket:
-            # Subscribe to logs for the address
+     
             subscription_request = {
                 "jsonrpc": "2.0",
                 "id": 1,
