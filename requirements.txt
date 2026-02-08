@@ -1,0 +1,7 @@
+solders
+solana
+websockets
+requests
+fastapi
+uvicorn
+python-dotenv
