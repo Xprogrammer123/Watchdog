@@ -24,9 +24,7 @@ def check_sol_transfer(meta, account_keys, sender: str, receiver: str) -> dict:
         sender_change = (post_balances[sender_idx] - pre_balances[sender_idx]) / 1e9
         receiver_change = (post_balances[receiver_idx] - pre_balances[receiver_idx]) / 1e9
 
-        # Logic: Sender should lose money, Receiver should gain money
-        # We allow sender_change to be 0 in case of some weird edge cases, but usually it's negative.
-        # Strict check: Receiver MUST gain > 0
+       
         
         if receiver_change > 0:
             return {
