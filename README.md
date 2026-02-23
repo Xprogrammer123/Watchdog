@@ -1,1 +1,121 @@
-IyBXQVRCSERPseignPUkEKCldhdGNoZG9nLUFQSSBpcyB0aGUgYmFja2VuZCBzZXJ2aWNlIGZvciB0aGUgW1dhdGNoZG9nIFByb3RvY29sXShodHRwczovL2dpdGh1Yi5jb20vWHByb2dyYW1tZXIxMjMvU29sLVdhdGNoZG9nKSwgYSB0b29sIGRlc2lnbmVkIHRvIG1vbml0b3IgYW5kIGRldGVjdCBmcmF1ZHVsZW50IHRyYW5zYWN0aW9ucyBvbiB0aGUgU29sYW5hIGJsb2NrY2hhaW4uIFRoaXMgQVBJLCBidWlsdCB3aXRoIFB5dGhvbiBhbmQgRmFzdEFQSSwgcHJvdmlkZXMgZW5kcG9pbnRzIHRvIHZlcmlmeSB0cmFuc2FjdGlvbnMsIG1vbml0b3Igc3VzcGljaW91cyB3YWxsZXRzLCBhbmQgcmV0cmlldmUgdGhlIHN0YXR1cyBvZiBtb25pdG9yZWQgd2FsbGV0cy4KCgpaKl9fVXNhZ2VfXSoqIFtzb2wtd2F0Y2hkb2ddKGh0dHBzOi8vZ2l0aHViLmNvbS9YcHJvZ3JhbW1lcjEyMy9Tb2wtV2F0Y2hkb2cpIEZyb250ZW5kIEFwcGxpY2F0aW9uLiAKCiMjIEZlYXR1cmVzCgotICoqVHJhbnNhY3Rpb24gVmVyaWZpY2F0aW9uOioqIFZlcmlmaWVzIGlmIGZ1bmRzIGhhdmUgYmVlbiB0cmFuc2ZlcnJlZCBmcm9tIGEgdmljdGltJ3Mgd2FsbGV0IHRvIGEgc3VzcGVjdGVkIHNjYW1tZXIgd2FsbGV0LgotICoqUmVhbC1UaW1lIFdhbGxldCBNb25pdG9yaW5nOioqIFVzZXMgV2ViU29ja2V0cyB0byBtb25pdG9yIHN1c3BlY3RlZCB3YWxsZXRzIGluIHJlYWwtdGltZS4KLSAqKlJpc2sgQW5hbHlzaXM6KiogQmFzaWMgcmlzayBsYWJlbGluZyBiYXNlZCBvbiB0aGUgZGVzdGluYXRpb24gYWRkcmVzcy4KLSAqKkFzeW5jaHJvbm91cyBUYXNrczoqKiBVdGlsaXplcyBGYXN0QVBJJ3MgYmFja2dyb3VuZCB0YXNrcyB0byBoYW5kbGUgdGhlIHdhbGxldCBtb25pdG9yaW5nIHdpdGhvdXQgYmxvY2tpbmcgdGhlIEFQSS4KCiMjIFRlY2ggU3RhY2sKCi0gKipMeXRob24gMy4xMCoqCi0gKipGYXN0QVBJOioqIEZvciBidWlsZGluZyB0aGUgQVBJLgotICoqVWxpY29ybjoqKiBBcyBhbiBBU0dJIHNlcnZlci4KLSAqKnNvbGFuYSAmIHNvbGRlcnM6KiogRm9yIGludGVyYWN0aW5nIHdpdGggdGhlIFNvbGFuYSBibG9ja2NoYWluLgotICoqV2ViU29ja2V0czoqKiBGb3IgcmVhbC10aW1lIGNvbW11bmljYXRpb24uCi0gKipweXRob24tZG90ZW52OioqIEZvciBtYW5hZ2luZyBlbnZpcm9ubWVudCB2YXJpYWJsZXMuCgojIyBHZXR0aW5nIFN0YXJ0ZWQKCioqMS4gQ2xvbmUgdGhlIHJlcG9zaXRvcnkqKgoKYGBgYmFzaAogIGdpdCBjbG9uZSAoW0NPREUgVE9PIDEzNjZeVk9JRCkKICBjZCBXYXRjaGRvZy1hcGkKYGBgCgoqKjIuIENyZWF0ZSBhbmQgQWN0aXZhdGUgYSBWaXJ0dWFsIEVudmlyb25tZW50KioqCgpgYGBiYXNoCiAgcHl0aG9uMyAtbSB2ZW52IHZlbnYKICBzb3VyY2UgdmVudi9iaW4vYWN0aXZhdGUgICMgT24gTWFjL0xpbnV4CiAgIyBvcnZlbnZcVGlucm9ubWVudFxBY3RpdmF0ZSAgIyBPbiBXaW5kb3dzCmBgYAoKKiozLiBJbnN0YWxsIERlcGVuZGVuY2llcyoqKgoKYGBgYmFzaAogIHBpcCBpbnN0YWxsIC1yIHJlcXVpcmVtZW50cy50eHQKYGBgCgojIyBSdW5uaW5nIHRoZSBTZXJ2ZXIKCkFmdGVyIGluc3RhbGxpbmcgdGhlIGRlcGVuZGVuY2llcywgeW91IGNhbiBydW4gdGhlIEFQSSB1c2luZyB1dmljb3JuOgoKYGBgYmFzaAogIHV2aWNvcm4gYXBwLm1haW46YXBwIC0tcmVsb2FkCmBgYAoKVGhlIEFQSSB3aWxsIGJlIGFjY2Vzc2libGUgYXQgaHR0cDovL2xvY2FsaG9zdDo4MDAwLgoKIyMgQVBJIEVuZHBvaW50cwoKPD5iPlBPU1QgL2FwaS92MS92ZXJpZnkqKioKCnZlcmlmaWVzIGEgU29sYW5hIHRyYW5zYWN0aW9uLi4KCisqKlJlcXVlc3QgQm9keTplcXVlc3QgQm9keSoqKgpgYGAganNvbgogIHsKICAgICJ1c2VyX3dhbGxldCI6ICI4NkZiUXQ3WjE5cmFkUkNCUUROeEN6THpLUXQ4RndhdTFMQUtkV2M0UWZhaCIsCiAgICAic2NhbW1lcl93YWxsZXQiOiAiNHhzNUJONmFFUVdqWWVkdzM5aERqWVR5MndmREdNcDFkQnZXd3VTVm1XenoiLAogICAgInRyYW5zYWN0aW9uX3NpZ25hdHVyZSI6ICJlMnRGSlk5NFJ5RmlCcnJqWVQzdjJ5WVZCaFdFRFFaUmJicnlkYWN4QXRqNUx2TGltaHpxOXJhNkh5M3o0eVJ3UWc4VzVTaEhGcFJqWmd6SkJwRWE4NSIKICB9CmBgYAoKKioqU3VjY2Vzc2Z1bCBSZXNwb25zZSg4NTEwIElOVEVSTkFMKSBTdWNlcnNlc3MgUmVzcG9uISoqKgp4eEAganNvbgogIHsKICAgICJ2ZXJpZmllZCI6IHRydWUsCiAgICAiYW1vdW50IjogMC4yNDUsCiAgICAidG9rZW4iOiAiU09MIiwKICAgICJtaW50IjogbnVsbCwKICAgICJ0aW1lc3RhbXAiOiAxNjg1NDkzODY0LAogICAgIm1lc3NhZ2UiOiAiVHJhbnNhY3Rpb24gVmVyaWZpZWQiCiAgfQpgYGAxCgkqKjw+Yj5QT1NULCBBbm5vdGhlcjwvdGFibGUgZWxlbWVudD4vYW5pL3YxL21vbml0b3IoYWx0PUFubm90IGZyb20gbGludSBwYXRoIHVwbG9hZCA1MHB4IGhlaWdodCBkYXRhcygqKSkAUGx1cyoqKgoKU3RhcnRzIG1vbml0b3JpbmcgYSBTYWNjYW1tZSBXcmF0b3IoKSAuCgoqKlJlcXVlc3QgQm9keSoqKgpgYGAganNvbgogIHsKICAgICJzY2FtbWVyX3dhbGxldCI6ICI0eHM1Qk42YUVRV2pZZWR3MzhkSmpZVHkyd2ZkR01wMWRidld3dVNabVd6dwogIH0KYGBgCgoqKjw+Yj5HRVQgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGVgcCAgLyAqKiAKI0RlcGVuZGFuY3lbJ2QnXSAuYXBpLnYyLnRleHQodHMpIC90di91KyoqaGlkZKkqKgpSZXRyaWV2ZXMgdGhlIGN1cnJlbnQgc3RhdHVzIG9mIGEgbW9uaXRvcmVkIHN3YWdnZXIgOgpgaXRzZW5fYnJhbmRpbmdoCnsvdGFrc2NvcGUnZXJyJywgV0VEIEFMTEUgUkVRVUVIElMKLAoqKipTdWNjZXNzZnVsIFJlc3BvbnNlKioqCmBgYCBqc29uCiAgewogICAgImFkZHJlc3MiOiAiNHhzNUJONmFFUVdqWWVkdzM5aERqWVR5MndmREdNcDFkQnZXd3VTVm1XenoiLAogICAgImJhbGFuY2UiOiAwLjUsCiAgICAic3RhdHVzIjogIk1vbml0b3JpbmciLAogICAgInJpc2tfbGFiZWwiOiAiVW5rbm93biIsCiAgICAibGF0ZXN0X2FjdGl2aXR5IjogW10KICB9CmBgYDoqKkNvbnRyaWJ1dGluzgoyKgpFeGNoYW5nZXMgZnJvbSBhbGwgY29ubmVjdGlvbnMgYXJlIHZhbGlkIG9mIGNhcmdvLCBjYW4gZW1haWwgZm91bmRlciBpZiBub25lLWNvZG9jdXMgbmVlZHMgaGFuZGxlciwgaWYgdGhlIHdlYnNpdGUgaGFzIGEgbG9vayBmb3IgYmVnaW5uZXJzLgoywqBDcmVhdGUgZm9ybSANCgAqKkpvaW4gbWUqKioqKkBzbm93bG9sdyBAWGNhbXAgb2Ygc29ub3dsaW8gdXNlZnVsLiBDSEFPIFJBSVMgYWN0dWFsLiBtZQoKKioqKi0xODQwOjoqKiogVmlzaWJsZSBwcm9qZWN0IG9ubHkuIAp2ZXZfY3NfMTY0MDA3NjA5NDg4NjE2MV83MjIwMSZuYmFnZT05YmIzMjZiNSZuYXR1c2VyPTYzMmNiNjUyNzQzODdjNzM0NzMzOTk2MDQyOWRkOGYzJnhjbXNoYWxhYng9YXJuKmh4cmw5MCZjMjZhdGgzczQ1MTBwbj1jcyYNCgpodHRwOi8vcHVnaXRqZWtlZWd5aWFnaHVwLmp2CiMjIyMjIyMjMjIqKlByb3RvcHJlZWUgaW4gRWR1bXkgQXBhY2hlIDUuMDEgyMjAwMDE2MzMyMjAKQSBsYXRlIEp1bGFuIGNvZGUgcHJvdmlkZWQgaGVyZSBubyBsZWZ0IHF1ZXVlLiA=
+# Watchdog API
+
+Watchdog-API is the backend service for the [Watchdog Protocol](https://github.com/Xprogrammer123/Sol-Watchdog), a tool designed to monitor and detect fraudulent transactions on the Solana blockchain. This API, built with Python and FastAPI, provides endpoints to verify transactions, monitor suspicious wallets, and retrieve the status of monitored wallets.
+
+## Features
+
+-   **Transaction Verification:** Verifies if funds have been transferred from a victim's wallet to a suspected scammer wallet.
+-   **Real-Time Wallet Monitoring:** Uses WebSockets to monitor suspected wallets in real-time.
+-   **Risk Analysis:** Basic risk labeling based on the destination address.
+-   **Asynchronous Tasks:** Utilizes FastAPI's background tasks to handle wallet monitoring without blocking the API.
+
+## Tech Stack
+
+-   Python 3.11
+-   FastAPI
+-   Uvicorn
+-   solana & solders
+-   WebSockets
+-   python-dotenv
+
+## Getting Started
+
+### Prerequisites
+
+-   Python 3.11 or later
+-   Git
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Xprogrammer123/Watchdog-api.git
+    cd Watchdog-api
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    # On macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # On Windows
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Running the Server
+
+After installing the dependencies, you can run the API using uvicorn:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+The API will be accessible at `http://localhost:8000`.
+
+## API Endpoints
+
+### POST /api/v1/verify
+
+Verifies a Solana transaction.
+
+**Request Body:**
+
+```json
+{
+  "user_wallet": "86FbQt7Z19radRCBQDNxCzAoDkf6M3Fau1LAKdWc4Qfah",
+  "scammer_wallet": "4xs5BN6aEQWjYedw39hDjYTy2wfDGmp1dBvWwuSVmXwz",
+  "transaction_signature": "e2tFJY94RyFiBrrjYT3v2yYVBhWEDQZRbbrxdacxAtj5LvLimhzq9ra6Hy3z4yRwQg8W5ShHFpRpzJzJBpEa85"
+}
+```
+
+**Successful Response:**
+
+```json
+{
+  "verified": true,
+  "amount": 0.245,
+  "token": "SOL",
+  "mint": null,
+  "timestamp": 1685493864,
+  "message": "Transaction Verified"
+}
+```
+
+### POST /api/v1/monitor
+
+Starts monitoring a scammer wallet.
+
+**Request Body:**
+
+```json
+{
+  "scammer_wallet": "4xs5BN6aEQWjYedw38hDjYTy2wfdGMp1dBvWwuSZmXwz"
+}
+```
+
+### GET /api/v1/status/{wallet_address}
+
+Retrieves the current status of a monitored wallet.
+
+**Successful Response:**
+
+```json
+{
+  "address": "4xs5BN6aEQWjYedw39hDjYTy2wfDGmp1dBvWwuSVmXwz",
+  "balance": 0.5,
+  "status": "Monitoring",
+  "risk_label": "Unknown",
+  "latest_activity": []
+}
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
